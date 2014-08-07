@@ -1,0 +1,444 @@
+/*
+Theme Name: Sample Theme
+Theme URI: http://www.www.www/
+Description: This is my sample theme.
+*/
+
+/* 基本 */
+body {
+	font-family: 'メイリオ',
+							'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #0c8bcd;
+}
+
+a img {
+	border: none;
+}
+
+/* コンテナ */
+div#container {
+	width: 900px;
+	margin: auto;
+}
+
+/* ヘッダー */
+div#header {
+	font-family: 'Trebuchet MS', sans-serif;
+	margin-bottom: 20px;
+}
+
+div#header h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+div#header h1 a {
+	color: #000000;
+}
+
+div#header p#desc {
+	font-size: 1em;
+	font-weight: bold;
+	color: #999999;
+	margin: 0 0 5px;
+}
+
+div#subinfo {
+	text-align: right;
+	margin: 32px 0 5px;
+}
+
+/* ナビゲーションバー */
+div#nav {
+	font-size: 0.75em;
+	height: 30px;
+	background-color: #ffffff;
+	border: solid 1px #aaaaaa;
+	margin-bottom: 8px;
+}
+
+div#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#nav li {
+	list-style-type: none;
+	float: left;
+}
+
+div#nav li a {
+	display: block;
+	width: 150px;
+	line-height: 30px;
+	border-right: solid 1px #aaaaaa;
+	color: #000000;
+	text-align: center;
+}
+
+div#nav a:hover {
+	background-color: #c4f254;
+}
+
+/* コンテンツ */
+div#content {
+	width: 550px;
+	float: left;
+}
+
+p.title {
+	font-weight: bold;
+	color: #585858;
+	width: 200px;
+	margin: 0 0 10px;
+	padding: 0 30px 0 10px;
+	background-image: url(bar.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+p.pagenation {
+	font-size: 0.75em;
+	overflow: hidden;
+}
+
+span.oldpage {
+	float: left;
+}
+
+span.newpage {
+	float: right;
+}
+
+/* 記事 */
+div.post {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+div.post h2 {
+	background-image: url(chip.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-top: solid 1px #aaaaaa;
+	border-bottom: solid 1px #aaaaaa;
+	font-size: 0.875em;
+	padding: 10px 18px;
+	margin: 0;
+}
+
+div.post h2 a {
+	color: #000000;
+}
+
+div.post p {
+	font-size: 0.875em;
+	line-height: 1.6;
+}
+
+div.post p.postcat {
+	text-align: right;
+	margin: -10px 10px 10px 0;
+}
+
+div.post p.postcat a {
+	font-size: smaller;
+	background-color: #a7d043;
+	border-radius: 2px;
+	color: #ffffff;
+	padding: 1px 5px;
+}
+
+div.post p.postinfo {
+	color: #0c8bcd;
+	text-align: right;
+	margin: 0;
+}
+
+/* 記事の個別ページ */
+.single div.post h2 {
+	background-color: #333333;
+	color: white;
+}
+
+.single div.post h2 a {
+	color: white;
+}
+
+/* 画像の個別ページ */
+.attachment div#content {
+	width: 100%;
+	float: none;
+}
+
+.attachment p.photo {
+	text-align: center;
+}
+
+/* 分割した記事へのリンク */
+#postpage {
+	text-align: center;
+	padding-top: 20px;
+	clear: both;
+}
+
+#postpage a {
+	border: solid 1px #aaaaaa;
+	padding: 5px 10px;
+	margin: 0 10px;
+}
+
+#postpage a:hover {
+	background: #f7e29e;
+}
+
+#postpage span {
+	padding: 5px 10px;
+	color: #888888;
+	background: #dddddd;
+}
+
+#postpage a span {
+	padding: 0;
+	color: black;
+	background: none;
+}
+
+/* 記事内の画像 */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.wp-caption {
+	border: solid 1px #aaaaaa;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* ギャラリー */
+.gallery-item {
+	width: 33%;
+	float: left;
+	margin-top: 0;
+	text-align: center;
+}
+
+.gallery img {
+	border: solid 1px #aaaaaa;
+	padding: 5px;
+}
+
+.gallery a:hover img {
+	background-color: #c4f254;
+}
+
+.gallery dd {
+	margin: 0;
+	font-size: 0.75em;
+}
+
+.gallery br+br {
+	display: none;
+}
+
+/* 天気と気温 */
+p.tenki {
+	width: 50px;
+	float: left;
+	text-align: center;
+	border: solid 1px #f3b62f;
+	padding: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* 関連記事 */
+div.related {
+	border: solid 1px #aaaaaa;
+	margin-top: 20px;
+}
+
+div.related p {
+	color: #ffffff;
+	background-color: #a7d043;
+	margin: 0;
+	padding-left: 10px;
+}
+
+div.related ol {
+	font-size: 0.75em;
+}
+
+/* タイトル一覧 */
+ul.post {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-top: dotted 1px #aaaaaa;
+}
+
+ul.post li {
+	border-bottom: dotted 1px #aaaaaa;
+	background-image: url(chip.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 15px 0 15px 20px;
+}
+
+ul.post li a {
+	color: #000000;
+}
+
+ul.post li span {
+	font-size: smaller;
+	color: #888888;
+}
+
+/* トップページのタイトルの一覧 */
+ul.toplist {
+	list-style-type: none;
+	margin: 0 0 30px;
+	padding: 0;
+	border-top: solid 1px #aaaaaa;
+}
+
+ul.toplist li {
+	font-size: 0.875em;
+	font-weight: bold;
+	border-bottom: solid 1px #aaaaaa;
+	background-image: url(chip.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 5px 0 5px 20px;
+}
+
+ul.toplist li a {
+	color: #000000;
+}
+
+ul.toplist li span {
+	font-size: smaller;
+	color: #888888;
+}
+
+/* おすすめ記事 */
+div#pickup div.post {
+	border: dotted 2px #f3b62f;
+	background-color: #ffeedd;
+	padding: 15px;
+}
+
+/* 続きを読む */
+div.post p.more {
+	margin: 0;
+	font-size: 0.625em;
+}
+
+div.post p.more a {
+	border: solid 1px #aaaaaa;
+	color: #333333;
+	padding: 3px;
+}
+
+div.post p.more a:hover {
+	background: #f7e29e;
+}
+
+/* サムネイル画像 */
+div.post p.thumb {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+/* ステータス */
+div#sidebar li#exephp-2 h2 {
+	background-color: #333333;
+	border-radius: 0;
+}
+
+div#sidebar li#exephp-2 ul {
+	border: solid 1px #aaaaaa;
+}
+
+div#sidebar li#exephp-2 li {
+	padding: 5px 10px;
+}
+
+div#sidebar li#exephp-2 span {
+	color: #888888;
+}
+
+/* サイドバー */
+div#sidebar {
+	width: 300px;
+	float: right;
+}
+
+div#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#sidebar .widget {
+	margin-bottom: 20px;
+}
+
+div#sidebar h2 {
+	font-size: 0.75em;
+	color: #ffffff;
+	background-color: #aaaaaa;
+	border-radius: 3px;
+	padding: 2px 10px;
+	margin: 0;
+}
+
+div#sidebar li li {
+	font-size: 0.75em;
+	border-bottom: dotted 1px #aaaaaa;
+	margin: 0;
+}
+
+div#sidebar li li a {
+	color: #000000;
+	display: block;
+	padding: 5px 10px;
+}
+
+div#sidebar li li a:hover {
+	background-color: #f7e29e;
+}
+
+
+
+/* フッター */
+div#footer {
+	border-top: solid 1px #aaaaaa;
+	padding: 6px 0;
+	clear: both;
+}
+
+di#footer p {
+	font-size: 0.75em;
+	font-style: normal;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
