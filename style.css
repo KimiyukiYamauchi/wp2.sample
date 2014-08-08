@@ -368,6 +368,30 @@ div.post p.thumb {
 	margin: 0 10px 10px 0;
 }
 
+/* 人気記事ランキング */
+div#sidebar ol.wpp-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#sidebar ol.wpp-list li a:before {
+	content: counter(mycount);
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: larger;
+	color: #ffffff;
+	background-color: #f3b62f;
+	padding: 2px 7px;
+	margin-right: 7px;
+	vertical-align: 2px;
+}
+
+div#sidebar ol.wpp-list li {
+	counter-increment: mycount;
+}
+
+
 /* ステータス */
 div#sidebar li#exephp-2 h2 {
 	background-color: #333333;
