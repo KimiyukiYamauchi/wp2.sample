@@ -1,5 +1,24 @@
 <?php get_header(); ?>
 
+<!-- パンくずリスト -->
+<div id="breadcrumb">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="<?php echo home_url(); ?>" itemprop="url">
+<span itemprop="title">トップ</span>
+</a> &rsaquo;
+</div>
+
+<?php $postcat = get_the_category(); ?>
+<?php $catid = $postcat[0]->cat_ID; ?>
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="<?php echo get_category_link($catid); ?>" itemprop="url">
+<span itemprop="title"><?php echo get_cat_name($catid); ?></span>
+</a> &rsaquo;
+</div>
+
+<div><?php the_title(); ?></div>
+
+</div>
 <!-- コンテツ -->
 <div id="content">
 

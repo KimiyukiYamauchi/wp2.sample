@@ -84,6 +84,20 @@ div#nav a:hover {
 	background-color: #c4f254;
 }
 
+/* パンくずリスト */
+.single div#header, .archive div#header {
+	margin-bottom: 5px;
+}
+
+div#breadcrumb {
+	margin-bottom: 5px;
+}
+
+div#breadcrumb div {
+	display: inline;
+	font-size: 0.75em;
+}
+
 /* コンテンツ */
 div#content {
 	width: 550px;
