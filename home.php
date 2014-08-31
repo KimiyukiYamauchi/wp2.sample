@@ -19,6 +19,15 @@ $myquery_pickup = array(
 <?php endwhile; endif; ?>
 </div>
 
+<p class="title">NEWS</p>
+
+<ul class="newslist">
+<?php query_posts('post_type=news&posts_per_page=2'); ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
+	<?php get_template_part('content', 'title'); ?>
+<?php endwhile; endif; ?>
+</ul>
+
 <p class="title">RECENT POSTS</p>
 
 <?php 

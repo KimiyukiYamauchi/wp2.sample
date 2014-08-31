@@ -48,4 +48,19 @@ add_filter('excerpt_more', 'my_excerpt_more');
 // 投稿フォーマット
 add_theme_support('post-formats', array('status'));
 
+// ニュース記事の投稿タイプ
+register_post_type(
+	'news',
+	array(
+		'label' => 'ニュース',
+		'hierarchical' => false,
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array(
+			'title',
+			'editor'
+		)
+	)
+);
+
 ?>

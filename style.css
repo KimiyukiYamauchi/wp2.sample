@@ -371,6 +371,31 @@ ul.toplist li span {
 	color: #888888;
 }
 
+/* ニュース */
+ul.newslist {
+	border: solid 1px #aaaaaa;
+	padding: 10px;
+	margin: 0 0 20px;
+	font-size: 0.75em;
+}
+
+ul.newslist li {
+	list-style-type: none;
+	background-image: url(arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	padding-left: 16px;
+	line-height: 18px;
+}
+
+ul.newslist a {
+	color: #000;
+}
+
+u.newpage span {
+	color: #666666;
+}
+
 /* おすすめ記事 */
 div#pickup div.post {
 	border: dotted 2px #f3b62f;
