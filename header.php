@@ -17,6 +17,7 @@
 <p id="desc"><?php bloginfo('description'); ?></p>
 
 <div id="subinfo">
+<?php echo get_search_form(); ?>
 <a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/feed.png" alt="RSS FEED" width="28" height="28" /></a>
 </div>
 <div id="nav">

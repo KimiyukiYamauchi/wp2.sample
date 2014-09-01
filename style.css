@@ -52,6 +52,42 @@ div#subinfo {
 	margin: 32px 0 5px;
 }
 
+/* 検索フォーム */
+#searchform, #searchform div {
+	display: inline;
+}
+
+#searchform label {
+	display: none;
+}
+
+#s {
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	padding: 3px 8px;
+}
+
+#s:hover, #s:focus {
+	background-color: #eeeeee;
+}
+
+#searchsubmit {
+	background-color: #666666;
+	border-radius: 5px;
+	color: #ffffff;
+	border: solid 1px #aaaaaa;
+	padding: 2px 8px;
+	margin-right: 10px;
+}
+
+#searchsubmit:hover {
+	background-color: #aaaaaa;
+}
+
+div#subinfo img {
+	vertical-align: bottom;
+}
+
 /* ナビゲーションバー */
 div#nav {
 	font-size: 0.75em;
@@ -126,6 +162,27 @@ span.oldpage {
 
 span.newpage {
 	float: right;
+}
+
+/* 検索結果 */
+.search p.title {
+	width: auto;
+	background: #333333;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 1.25em;
+}
+
+.search-no-results p.title {
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.search-no-results #content {
+	text-align: center;
+	line-height: 2;
+	border: solid 1px #333333;
+	padding-bottom: 40px;
 }
 
 /* ページ番号リンク */
