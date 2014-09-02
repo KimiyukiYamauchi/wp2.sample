@@ -25,9 +25,43 @@
 	'theme_location' => 'navigation'
 )); ?>
 </div>
-<?php if(!is_single()): ?>
+<?php if(!is_single() && !is_home()): ?>
 <?php if(get_header_image()): ?>
-<div id="image"><img src="<?php header_image(); ?>" alt="*" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" /></div>
+
+<script>
+jQuery(function() {
+	jQuery('#slideshow').crossSlide({
+			sleep: 2,
+			fade: 1
+	}, [
+<?php $headers = get_uploaded_header_images(); ?>
+<?php foreach($headers as $key => $value): ?>
+	{ src: '<?php echo $value['url']; ?>' },
+<?php endforeach; ?>
+	])
+});
+</script>
+<div id="slideshow"></div>
 <?php endif; ?>
+<?php endif; ?>
+
+<?php if(is_home()): ?>
+<?php
+$myquery_pickup = array(
+	'posts_per_page' => 1,
+	'ignore_sticky_posts' => 1,
+	'post__in' => get_option('sticky_posts')
+);
+?>
+<?php query_posts($myquery_pickup); ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
+	<div id="osusume">
+	<p class="thumb"><?php the_post_thumbnail(); ?></p>
+	<p class="pickup">PICK-UP POST</p>
+	<h2><?php the_title(); ?></h2>
+	<p><?php the_excerpt(); ?></p>
+	<p class="more"><a href="<?php the_permalink(); ?>">続きを読む</a></p>
+	</div>
+<?php endwhile; endif; ?>
 <?php endif; ?>
 </div>

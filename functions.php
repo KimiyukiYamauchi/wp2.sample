@@ -26,6 +26,9 @@ add_theme_support('automatic-feed-links');
 add_action('wp_head', 'myScript', 1);
 function myScript(){
 	wp_enqueue_script('jquery');
+
+	wp_enqueue_script('jquery.cross.slide.min.js',
+		get_bloginfo('template_url') . '/jquery.cross-slide.js');
 }
 
 // エディタ・スタイルシート

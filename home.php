@@ -3,22 +3,6 @@
 <!-- コンテツ -->
 <div id="content">
 
-<div id="pickup">
-<p class="title">PICK-UP POSTS</p>
-
-<?php
-$myquery_pickup = array(
-	'posts_per_page' => 1,
-	'ignore_sticky_posts' => 1,
-	'post__in' => get_option('sticky_posts')
-);
-?>
-<?php query_posts($myquery_pickup); ?>
-<?php if(have_posts()): while(have_posts()): the_post(); ?>
-	<?php get_template_part('content', 'excerpt'); ?>
-<?php endwhile; endif; ?>
-</div>
-
 <p class="title">NEWS</p>
 
 <ul class="newslist">

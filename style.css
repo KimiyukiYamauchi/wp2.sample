@@ -52,6 +52,67 @@ div#subinfo {
 	margin: 32px 0 5px;
 }
 
+/* スライドショー */
+#slideshow {
+	width: 900px;
+	height: 228px;
+}
+
+/* ヘッダー部分のおすすめ記事 */
+#osusume {
+	border: solid 1px #aaaaaa;
+	overflow: hidden;
+	height: 400px;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+#osusume .thumb {
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+#osusume .thumb img {
+	vertical-align: bottom;
+}
+
+#osusume .pickup {
+	font-size: smaller;
+	background-color: #c4f254;
+	border-radius: 2px;
+	color: #000000;
+	padding: 1px 0;
+}
+
+#osusume h2 {
+	margin-top: 30px;
+	margin-right: 20px;
+	font-size: 1.125em;
+	border-bottom: dotted 1px #ffffff;
+	padding-bottom: 5px;
+}
+
+#osusume p {
+	margin-right: 20px;
+	line-height: 1.4;
+}
+
+#osusume p.more {
+	text-align: right;
+}
+
+#osusume p.more a {
+	border: solid 1px #aaaaaa;
+	background-color: #ffffff;
+	color: #333333;
+	padding: 3px;
+	font-size: 0.75em;
+}
+
+#osusume p.more a:hover {
+	background-color: #f7e29e;
+}
+
 /* 検索フォーム */
 #searchform, #searchform div {
 	display: inline;
